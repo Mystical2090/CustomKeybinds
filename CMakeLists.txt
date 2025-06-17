@@ -7,8 +7,6 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 project(CustomKeybinds VERSION 1.10.3)
 
 file(GLOB SOURCES
-	src/*.hpp
-	src/*.cpp
 )
 set_source_files_properties(${OBJC_SOURCES} PROPERTIES SKIP_PRECOMPILE_HEADERS ON)
 
