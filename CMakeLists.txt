@@ -10,10 +10,6 @@ file(GLOB SOURCES
 	src/*.hpp
 	src/*.cpp
 )
-
-file(GLOB OBJC_SOURCES
-    src/*.mm
-)
 set_source_files_properties(${OBJC_SOURCES} PROPERTIES SKIP_PRECOMPILE_HEADERS ON)
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES} ${OBJC_SOURCES})
